@@ -1,0 +1,26 @@
+import subprocess, os
+import pyautogui,time
+import win32gui, win32ui, win32con, win32api
+
+print("start")
+os.startfile(r"C:\UA3\Source\ManagedCare\Dev\BAS\ManagedCare\BRE\ManagedCare - 11122018.ruleappx", "open")
+#subprocess.call(["cmd", "/c", "start", "/max", r"C:\UA3\Source\ManagedCare\Dev\BAS\ManagedCare\BRE\ManagedCare - 11122018.ruleappx"])
+time.sleep(20)
+hwnd = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hwnd, win32con.SW_MAXIMIZE)
+print("end")
+pyautogui.size()
+width, height = pyautogui.size()
+print(width)
+print(height)
+#pyautogui.moveTo()
+pyautogui.click(110,100)
+time.sleep(3)
+pyautogui.click(120,200)
+time.sleep(10)
+hwnd1 = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hwnd1, win32con.SW_MAXIMIZE)
+#pyautogui.doubleClick(100,100)
+curWidth, curHeight = pyautogui.position()
+print(curWidth)
+print(curHeight)
