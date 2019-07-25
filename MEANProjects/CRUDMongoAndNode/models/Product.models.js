@@ -2,8 +2,8 @@ var mongoose = require("mongoose");
 var schema = mongoose.Schema;
 
 let ProductSchema = new schema({
-    Name : {type: String, required: true, max: 100},
-    price: {type:Number, required: true}
+    first_name : {type: String, required: true, max: 100},
+    age: {type:Number, required: true}
 });
 
 //export model
