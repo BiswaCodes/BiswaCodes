@@ -24,7 +24,7 @@ var port = process.env.port || 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use("/product",product);
+app.use('/product',product);// all the URLs appended after /product will gets called
 
 //creation of the server
 app.listen(port, function(req, res){
